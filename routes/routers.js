@@ -3,6 +3,6 @@ const { handleRequests } = require("../controllers/handleRequests");
 const router = express.Router();
 
 router
-    .get("/whatsapp-bot", handleRequests)
+    .post("/messages/send", handleRequests)
 
 module.exports = router
