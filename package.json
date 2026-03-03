@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-contact-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot to send notifications to contacts using Baileys library.",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "notifications"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "awesome-phonenumber": "^7.8.0",
+    "baileys": "^7.0.0-rc.9",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "node-cache": "^5.1.2",
+    "pino": "^10.3.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
