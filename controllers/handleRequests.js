@@ -19,11 +19,12 @@ ${msg}
 const handleRequests = async (req, res) => {
     try {
         const data = req.data;
-        const query = req.query;
+        const {number, message} = data;
+        // const query = req.query;
 
-        const number = data?.number || query?.number;
-        const message = data?.message || query?.message;
-
+        // const number = data?.number || query?.number;
+        // const message = data?.message || query?.message;
+        
         if (!number || !message) {
             res.status(400).json(format_msg("Missing 'number' or 'message' parameter", null, true));
             return;
