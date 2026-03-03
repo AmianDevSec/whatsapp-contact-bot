@@ -16,7 +16,7 @@ ${msg}
  * @param {Object} res 
  * @returns
  */
-const handleRequests = async (req, res) => {
+const send_messages = async (req, res) => {
     try {
         const data = req.data;
         const {number, message} = data;
@@ -42,4 +42,4 @@ const handleRequests = async (req, res) => {
     }
 }
 
-module.exports = { handleRequests };
+module.exports = { send_messages };
