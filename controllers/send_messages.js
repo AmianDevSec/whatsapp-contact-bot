@@ -31,7 +31,7 @@ const send_messages = async (req, res) => {
         }
 
         const uniqueId = Math.floor(Math.random() * 10000); // tiny random ID
-        await sendMessage(number, message_to_send(message, uniqueId));
+        await sendMessage(number, message); // message_to_send(message, uniqueId)
 
         res.status(200).json(format_msg('Message sent successfully'));
         return;
